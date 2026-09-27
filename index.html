@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Textbox Validation</title>
+
+    <script>
+        function validateForm()
+        {
+            var name =
+                document.getElementById("name").value;
+
+            var department =
+                document.getElementById("department").value;
+
+            var city =
+                document.getElementById("city").value;
+
+            if (name == "")
+            {
+                alert("Name textbox is empty");
+                return;
+            }
+
+            if (department == "")
+            {
+                alert("Department textbox is empty");
+                return;
+            }
+
+            if (city == "")
+            {
+                alert("City textbox is empty");
+                return;
+            }
+
+            alert("All textboxes are filled");
+        }
+    </script>
+</head>
+
+<body>
+
+<h2>Textbox Validation</h2>
+
+<form>
+
+    Name:
+    <input type="text" id="name"><br><br>
+
+    Department:
+    <input type="text" id="department"><br><br>
+
+    City:
+    <input type="text" id="city"><br><br>
+
+    <input type="button"
+           value="Validate"
+           onclick="validateForm()">
+
+</form>
+
+</body>
+</html>
